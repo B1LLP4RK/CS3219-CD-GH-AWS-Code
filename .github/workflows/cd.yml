@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24.x'
-          cache: 'npm
+          cache: 'npm'
       - name: Generate deployment package
         run: zip -r address-book-app.zip config controllers models routes index.js package.json
       - name: Get Node.js version
